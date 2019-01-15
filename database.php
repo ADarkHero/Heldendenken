@@ -70,7 +70,7 @@ function getFeaturedSongs($featured_db_name, $pdo){
                 <?php echo $row["Name"]; ?>
             </p>
 
-            <a href="<?php echo $row["Picture"]; ?>" target="_blank">
+            <a href="<?php echo $row["Picture"]; ?>" target="_blank" data-toggle="lightbox">
                 <img src="<?php echo $row["Picture"]; ?>" class="img-fluid song-image" alt="Responsive image">
             </a>
 
