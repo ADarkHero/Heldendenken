@@ -75,7 +75,7 @@ function getFeaturedSongs($featured_db_name, $pdo){
             </a>
 
             <blockquote class="blockquote song-quote">
-                <p class="mb-0"><?php echo $row["Quote"]; ?></p>
+                <p class="mb-0">"<?php echo $row["Quote"]; ?>"</p>
                 <footer class="blockquote-footer">ADarkHero, <cite title="Source Title"><?php echo $row["Name"]; ?></cite></footer>
             </blockquote>
 
