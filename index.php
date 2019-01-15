@@ -17,7 +17,7 @@
     <title>Heldendenken</title>
   </head>
   
-<nav class="navbar navbar-expand-lg navbar-dark">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
   <a class="navbar-brand" href="#">Heldendenken</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -44,7 +44,7 @@
     </div>
 </section>
 
-<footer class="footer">
+<footer class="footer fixed-bottom">
     <div class="container">
         <p class="text-muted">
             (c) <a href="https://www.adarkhero.de" target="_blank">ADarkHero</a> 2019

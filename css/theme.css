@@ -23,7 +23,7 @@
 }
 
 .row{
-    padding-top:10px;
+    padding-top: 10px;
 }
 
 .row img {
@@ -41,8 +41,13 @@
 }
 
 .card-block{
+    margin-top: 6vh;
     height: 87.5vh;
     border: none;
+}
+
+.footer{
+    position: fixed !important;
 }
 
 /* Featured song display
