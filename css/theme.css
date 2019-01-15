@@ -12,10 +12,10 @@
 .navbar-brand{
     font-family: 'Brown Fox', sans-serif !important;
     background: red;
-    background: -webkit-linear-gradient(left, violet, blue, cyan, green, yellow, orange);
-    background: -o-linear-gradient(right, violet, blue, cyan, green, yellow, orange);
-    background: -moz-linear-gradient(right, violet, blue, cyan, green, yellow, orange);
-    background: linear-gradient(to right, violet, blue, cyan, green, yellow, orange);
+    background: -webkit-linear-gradient(left, #ffb2b3, #eab2ff, #b2e2ff, #b2f1ff, #b2ffc6, #feffb2, #ffc7b2);
+    background: -o-linear-gradient(right, #ffb2b3, #eab2ff, #b2e2ff, #b2f1ff, #b2ffc6, #feffb2, #ffc7b2);
+    background: -moz-linear-gradient(right, #ffb2b3, #eab2ff, #b2e2ff, #b2f1ff, #b2ffc6, #feffb2, #ffc7b2);
+    background: linear-gradient(to right, #ffb2b3, #eab2ff, #b2e2ff, #b2f1ff, #b2ffc6, #feffb2, #ffc7b2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0 0 100px white;
