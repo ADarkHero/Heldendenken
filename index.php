@@ -61,6 +61,7 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/ekko-lightbox.min.js"></script>
+    <script src="js/scrollerino.js"></script>
     
     <script>
         $(document).on('click', '[data-toggle="lightbox"]', function(event) {
