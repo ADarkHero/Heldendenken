@@ -1,10 +1,6 @@
 <?php
 
-$db_host = 'localhost';
-$db_name = 'heldendenken';
-$db_user = 'root';
-$db_password = '';
-$pdo = new PDO("mysql:host=$db_host;dbname=$db_name;charset=utf8", $db_user, $db_password);
+require_once 'dbconnection.php';
 
 //The scripts connect to a wordpress database
 $wordpress_short = "ggcx"; //The little text thing that wordpress sets before the table name
@@ -79,7 +75,9 @@ function getFeaturedSongs($featured_db_name, $pdo){
                 <footer class="blockquote-footer">ADarkHero, <cite title="Source Title"><?php echo $row["Name"]; ?></cite></footer>
             </blockquote>
 
-            <a href="<?php echo $row["Lyrics"]; ?>" target="_blank" class="song-lyrics">Lyrics</a>
+            <a href="<?php echo $row["Lyrics"]; ?>" target="_blank" class="song-lyrics">
+                <button type="button" class="btn btn-primary btn-sm btn-block">Lyrics</button>
+            </a>
             
             <div class="song-space"></div>
         </div>
