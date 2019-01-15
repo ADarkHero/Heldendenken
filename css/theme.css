@@ -3,6 +3,7 @@
 
 .navbar-dark{
     background-color: #991122 !important;
+    height: 6vh;
 }
 
 .nav-link, .navbar-brand{
@@ -31,6 +32,17 @@
   width: 100%;
   height: 35vh;
   margin-bottom: 1rem;
+}
+
+.row {
+  .col12 {
+    display: inline-block;
+  }
+}
+
+.card-block{
+    height: 87.5vh;
+    border: none;
 }
 
 /* Featured song display

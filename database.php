@@ -60,7 +60,9 @@ function getFeaturedSongs($featured_db_name, $pdo){
     $sql = "SELECT * FROM ".$featured_db_name."";
     foreach ($pdo->query($sql) as $row) {
        ?>
-        <div class="col-12 col-lg-4">
+                
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card card-block">
 
             <p class="lead song-name">
                 <?php echo $row["Name"]; ?>
@@ -80,7 +82,8 @@ function getFeaturedSongs($featured_db_name, $pdo){
             </a>
             
             <div class="song-space"></div>
-        </div>
+            </div>
+         </div>
     <?php
     } 
 }

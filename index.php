@@ -35,11 +35,12 @@
 </nav>
 
 <section id="content">
-    <div class="container">
-        <div class="row">
+    <div class="container-fluid">
+        <div class="row flex-row flex-nowrap">
                 <?php
                     getFeaturedSongs($featured_db_name, $pdo);
                 ?>
+        </div>
     </div>
 </section>
 
