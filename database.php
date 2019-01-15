@@ -9,7 +9,6 @@ $pdo = new PDO("mysql:host=$db_host;dbname=$db_name;charset=utf8", $db_user, $db
 //The scripts connect to a wordpress database
 $wordpress_short = "ggcx"; //The little text thing that wordpress sets before the table name
 $lyrics_category = "17"; //term_id @ terms; ID from your songtexts
-$cover_category = "46"; //term_id @ terms; ID from your album-covers
 $baselink = "https://media.adarkhero.de/txt/"; //Base link for the menu stuff
 $featured_db_name = $wordpress_short."_"."featuredSongs"; //Database for featured songs
 
@@ -67,18 +66,22 @@ function getFeaturedSongs($featured_db_name, $pdo){
        ?>
         <div class="col-12 col-lg-4">
 
-            <p class="lead">
+            <p class="lead song-name">
                 <?php echo $row["Name"]; ?>
             </p>
 
-            <img src="<?php echo $row["Picture"]; ?>" class="img-fluid" alt="Responsive image">
+            <a href="<?php echo $row["Picture"]; ?>" target="_blank">
+                <img src="<?php echo $row["Picture"]; ?>" class="img-fluid song-image" alt="Responsive image">
+            </a>
 
-            <blockquote class="blockquote">
+            <blockquote class="blockquote song-quote">
                 <p class="mb-0"><?php echo $row["Quote"]; ?></p>
                 <footer class="blockquote-footer">ADarkHero, <cite title="Source Title"><?php echo $row["Name"]; ?></cite></footer>
             </blockquote>
 
-            <a href="<?php echo $row["Lyrics"]; ?>" target="_blank">Lyrics</a>
+            <a href="<?php echo $row["Lyrics"]; ?>" target="_blank" class="song-lyrics">Lyrics</a>
+            
+            <div class="song-space"></div>
         </div>
     <?php
     } 

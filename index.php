@@ -42,7 +42,17 @@
     </div>
 </section>
 
-
+<footer class="footer">
+    <div class="container">
+        <p class="text-muted">
+            (c) <a href="https://www.adarkhero.de" target="_blank">ADarkHero</a> 2019
+            | <a href="https://www.adarkhero.de" target="_blank">Imprint</a>
+            | <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>
+            | Made with ❤ and 🎶
+        </p> 
+    </div>
+</footer>
+  
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
