@@ -4,7 +4,7 @@ require_once 'dbconnection.php';
 
 //The scripts connect to a wordpress database
 $wordpress_short = "ggcx"; //The little text thing that wordpress sets before the table name
-$lyrics_category = "17"; //term_id @ terms; ID from your songtexts
+$lyrics_category = "49"; //term_id @ terms; ID from your songtexts
 $baselink = "https://media.adarkhero.de/txt/"; //Base link for the menu stuff
 $featured_db_name = $wordpress_short."_"."featuredSongs"; //Database for featured songs
 
@@ -57,7 +57,7 @@ function getSongLists($categories, $category_names, $wordpress_short, $baselink,
 }
 
 function getFeaturedSongs($featured_db_name, $pdo){
-    $sql = "SELECT * FROM ".$featured_db_name."";
+    $sql = "SELECT * FROM ".$featured_db_name." ORDER BY ID DESC";
     foreach ($pdo->query($sql) as $row) {
        ?>
                 
