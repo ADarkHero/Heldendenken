@@ -49,7 +49,7 @@ function getSongLists($categories, $category_names, $wordpress_short, $baselink,
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
        <?php
        foreach ($post_titles as $postindex => $postvalue) {
-            echo '<a class="dropdown-item" href="'.$baselink.$post_names[$postindex].'/" target="_blank">'.$postvalue.'</a>';
+            echo '<a class="dropdown-item" href="'.$baselink.$post_names[$postindex].'/#content" target="_blank">'.$postvalue.'</a>';
         }
        
        echo '</div>';
