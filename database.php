@@ -61,7 +61,7 @@ function getFeaturedSongs($featured_db_name, $pdo){
     foreach ($pdo->query($sql) as $row) {
        ?>
                 
-        <div class="col-12 col-md-6 col-lg-4">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
             <div class="card card-block">
 
             <p class="lead song-name">
